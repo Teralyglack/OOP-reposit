@@ -1,8 +1,11 @@
 #pragma once
 #include "Product.h"
 class ProductInfo {
-	Product product;
-	double price;
-	int quantity;
-};
+public:
+	map<string, unsigned>productList;
+	ProductInfo() {};
 
+	int quantity() {
+		return productList.size();
+	}
+};
